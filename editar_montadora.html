@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Montadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Editar Montadora</h1>
+    
+    <form action="atualizar_montadora.php" method="POST">
+        <input type="hidden" name="id" value="1"> <!-- ID da montadora -->
+        
+        <label for="nome">Nome da Montadora:</label>
+        <input type="text" id="nome" name="nome" value="Montadora A" required>
+        
+        <br><br>
+        <input type="submit" value="Atualizar">
+    </form>
+
+    <br>
+    <a href="index.html">Voltar à Listagem</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Veículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Novo Veículo</h1>
+    
+    <form action="processar_veiculo.php" method="POST">
+        <input type="hidden" name="montadora_id" value="1"> <!-- ID da montadora -->
+        
+        <label for="nome">Nome do Veículo:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="ano">Ano do Veículo:</label>
+        <input type="number" id="ano" name="ano" required>
+
+        <br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <br>
+    <a href="veiculos.html?montadora_id=1">Voltar à Listagem de Veículos</a>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos da Montadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veículos da Montadora</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome do Veículo</th>
+                <th>Ano</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os veículos serão listados aqui -->
+            <tr>
+                <td>1</td>
+                <td>Veículo A</td>
+                <td>2020</td>
+                <td>
+                    <a href="editar_veiculo.html?id=1">Editar</a> |
+                    <a href="excluir_veiculo.html?id=1">Excluir</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Veículo B</td>
+                <td>2021</td>
+                <td>
+                    <a href="editar_veiculo.html?id=2">Editar</a> |
+                    <a href="excluir_veiculo.html?id=2">Excluir</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a href="criar_veiculo.html?montadora_id=1">Adicionar Novo Veículo</a>
+    <br>
+    <a href="index.html">Voltar à Listagem de Montadoras</a>
+</body>
+</html>
